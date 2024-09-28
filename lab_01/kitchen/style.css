@@ -1,0 +1,113 @@
+header{
+    background: url(images/header-page.jpg)no-repeat;
+    background-size: 100%;
+    height: 130px;
+    width: 50%;
+}
+
+body{
+    background: url(images/dark-wood.jpg);
+    font-family:'Lato',sans-serif;
+    font-size:14px;
+    text-decoration-color: #333333;
+    margin: 0px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    margin: 0;
+    text-align: end;
+    padding-top: 42px;
+    font-size: 35px;
+}
+nav{
+    background: url(images/header-page.jpg)no-repeat;
+    background-size: 100%;
+    width: 50%;
+    height: 33px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+li{
+    display: inline-block; 
+}
+a{
+    padding-right: 35px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+ul{
+    list-style-type: none;
+}
+
+main{
+    background-color: #fff;
+    width: 57%;
+    display: flex;
+}
+
+figure{
+    border-color: #796969;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+    margin: 10px;
+    float: left;
+}
+
+main article:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+article{
+    display: flex;
+    padding: 10px;
+}
+
+footer{
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    background-color: #b4a6a6f5;
+    padding: 20px 0 20px 0;
+}
+
+.popular-dishes{
+    padding-top: 10px;
+}
+
+aside h2{
+    padding-bottom: 150px;
+    margin-left: 20px;
+    color: #c92caf;
+}
+
+aside li{
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+
+aside a{
+    color: #c92caf;
+}
+
+h2{
+    font-size: 30px;
+}
+
+h3{
+    color: #dacd1a;
+    font-size: 20px;
+}
+
+p{
+    font-size: 15px;
+}

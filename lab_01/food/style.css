@@ -1,0 +1,57 @@
+header {
+    h1 {
+
+        size: 80px;
+        Font-family: 'Lato', sans-serif;
+        Margin: 0;
+        Padding: 80px 0 0 20px;
+        text-align: center;
+        Color: #ffffff;
+
+
+    }
+
+    width: 100%;
+    height: 200px;
+    background-image: url("header.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #333333;
+    margin: 0px;
+    Padding: 0px;
+
+    main {
+        padding: 30px 100px;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+
+        .content {
+            width: 70%;
+
+            button {
+                padding: 8px;
+                border: 1px solid rgba(177, 56, 56, 0.752);
+                border-radius: 30px;
+                background: white;
+                color: rgba(177, 56, 56, 0.752);
+            }
+        }
+
+        aside {
+            img {
+                width: 100%;
+            }
+
+            width: 30%;
+        }
+
+    }
+
+}

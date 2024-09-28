@@ -1,0 +1,404 @@
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Big+Shoulders+Display:800,var(--heading-XL-font-weight),var(--heading-m-font-weight)|Outfit:300,var(--body-m-font-weight)");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+
+
+:root {
+  --almost-black: rgba(21, 21, 21, 1);
+  --white: rgba(255, 255, 255, 1);
+  --gold: rgba(213, 150, 108, 1);
+  --dark-grey: rgba(68, 68, 68, 1);
+  --heading-XL-font-family: "Big Shoulders Display", Helvetica;
+  --heading-XL-font-weight: 900;
+  --heading-XL-font-size: 96px;
+  --heading-XL-letter-spacing: 0px;
+  --heading-XL-line-height: 88px;
+  --heading-XL-font-style: normal;
+  --heading-l-font-family: "Big Shoulders Display", Helvetica;
+  --heading-l-font-weight: 900;
+  --heading-l-font-size: 70px;
+  --heading-l-letter-spacing: 0px;
+  --heading-l-line-height: 70px;
+  --heading-l-font-style: normal;
+  --heading-m-font-family: "Big Shoulders Display", Helvetica;
+  --heading-m-font-weight: 900;
+  --heading-m-font-size: 60px;
+  --heading-m-letter-spacing: 0px;
+  --heading-m-line-height: 60px;
+  --heading-m-font-style: normal;
+  --heading-s-font-family: "Big Shoulders Display", Helvetica;
+  --heading-s-font-weight: 900;
+  --heading-s-font-size: 36px;
+  --heading-s-letter-spacing: 0px;
+  --heading-s-line-height: 36px;
+  --heading-s-font-style: normal;
+  --body-m-font-family: "Outfit", Helvetica;
+  --body-m-font-weight: 300;
+  --body-m-font-size: 22px;
+  --body-m-letter-spacing: 0px;
+  --body-m-line-height: 32px;
+  --body-m-font-style: normal;
+  --body-s-font-family: "Outfit", Helvetica;
+  --body-s-font-weight: 300;
+  --body-s-font-size: 18px;
+  --body-s-letter-spacing: 0px;
+  --body-s-line-height: 28px;
+  --body-s-font-style: normal;
+}
+
+.home-container {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.home-container .main-div {
+  background-color: var(--white);
+  overflow: hidden;
+  width: 1439px;
+  height: 2554px;
+  position: relative;
+}
+
+.home-container .content-group {
+  position: absolute;
+  width: 1275px;
+  height: 800px;
+  top: 0;
+  left: 0;
+}
+
+.home-container .image-container {
+  position: relative;
+  height: 800px;
+}
+
+.home-container .gallery-rectangle {
+  position: absolute;
+  width: 540px;
+  height: 800px;
+  top: 0;
+  left: 450px;
+  object-fit: cover;
+}
+
+.home-container .modern-art-title {
+  position: absolute;
+  width: 514px;
+  top: 190px;
+  left: 165px;
+  font-family: var(--heading-XL-font-family);
+  font-weight: var(--heading-XL-font-weight);
+  color: var(--almost-black);
+  font-size: var(--heading-XL-font-size);
+  letter-spacing: var(--heading-XL-letter-spacing);
+  line-height: var(--heading-XL-line-height);
+  font-style: var(--heading-XL-font-style);
+}
+
+.home-container .gallery-description {
+  position: absolute;
+  width: 350px;
+  top: 190px;
+  left: 925px;
+  font-family: var(--body-m-font-family);
+  font-weight: var(--body-m-font-weight);
+  color: var(--dark-grey);
+  font-size: var(--body-m-font-size);
+  letter-spacing: var(--body-m-letter-spacing);
+  line-height: var(--body-m-line-height);
+  font-style: var(--body-m-font-style);
+}
+
+.home-container .location-group {
+  position: absolute;
+  width: 260px;
+  height: 72px;
+  top: 414px;
+  left: 925px;
+}
+
+.home-container .location-wrapper {
+  position: absolute;
+  width: 204px;
+  height: 72px;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.home-container .location-header {
+  position: relative;
+  width: 206px;
+  height: 74px;
+  top: -1px;
+  left: -1px;
+  background-color: var(--almost-black);
+}
+
+.home-container .location-text {
+  position: absolute;
+  top: 25px;
+  left: 33px;
+  font-family: "Big Shoulders Display", Helvetica;
+  font-weight: 800;
+  color: var(--white);
+  font-size: 20px;
+  letter-spacing: 3.64px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.home-container .location-link {
+  position: absolute;
+  width: 56px;
+  height: 72px;
+  top: 0;
+  left: 204px;
+}
+
+.home-container .location-path-wrapper {
+  position: relative;
+  width: 58px;
+  height: 74px;
+  top: -1px;
+  left: -1px;
+  background-color: var(--gold);
+}
+
+.home-container .location-path {
+  position: absolute;
+  width: 9px;
+  height: 25px;
+  top: 25px;
+  left: 25px;
+}
+
+.home-container .jakarta-art-image {
+  position: absolute;
+  width: 450px;
+  height: 799px;
+  top: 1px;
+  left: 0;
+}
+
+.home-container .gallery-experience-group {
+  position: absolute;
+  width: 1110px;
+  height: 1150px;
+  top: 980px;
+  left: 165px;
+}
+
+.home-container .gallery-info {
+  position: absolute;
+  width: 350px;
+  height: 280px;
+  top: 60px;
+  left: 0;
+}
+
+.home-container .your-visit-title {
+  position: absolute;
+  width: 350px;
+  top: 0;
+  left: 0;
+  font-family: var(--heading-m-font-family);
+  font-weight: var(--heading-m-font-weight);
+  color: var(--almost-black);
+  font-size: var(--heading-m-font-size);
+  letter-spacing: var(--heading-m-letter-spacing);
+  line-height: var(--heading-m-line-height);
+  font-style: var(--heading-m-font-style);
+}
+
+.home-container .gallery-insights-description {
+  position: absolute;
+  width: 350px;
+  top: 152px;
+  left: 0;
+  font-family: var(--body-m-font-family);
+  font-weight: var(--body-m-font-weight);
+  color: var(--dark-grey);
+  font-size: var(--body-m-font-size);
+  letter-spacing: var(--body-m-letter-spacing);
+  line-height: var(--body-m-line-height);
+  font-style: var(--body-m-font-style);
+}
+
+.home-container .first-gallery-image {
+  position: absolute;
+  width: 635px;
+  height: 400px;
+  top: 0;
+  left: 475px;
+  object-fit: cover;
+}
+
+.home-container .second-gallery-rectangle {
+  width: 635px;
+  height: 720px;
+  left: 0;
+  position: absolute;
+  top: 430px;
+  object-fit: cover;
+}
+
+.home-container .third-gallery-rectangle {
+  width: 445px;
+  height: 313px;
+  left: 665px;
+  position: absolute;
+  top: 430px;
+  object-fit: cover;
+}
+
+.home-container .inspiration-wrapper {
+  position: absolute;
+  width: 445px;
+  height: 377px;
+  top: 773px;
+  left: 665px;
+}
+
+.home-container .group-wrapper {
+  position: relative;
+  width: 447px;
+  height: 379px;
+  top: -1px;
+  left: -1px;
+  background-color: var(--almost-black);
+}
+
+.home-container .group-5 {
+  position: relative;
+  width: 350px;
+  height: 248px;
+  top: 66px;
+  left: 49px;
+}
+
+.home-container .inspiration-title {
+  position: absolute;
+  width: 350px;
+  top: 0;
+  left: 0;
+  font-family: var(--heading-m-font-family);
+  font-weight: var(--heading-m-font-weight);
+  color: var(--white);
+  font-size: var(--heading-m-font-size);
+  letter-spacing: var(--heading-m-letter-spacing);
+  line-height: var(--heading-m-line-height);
+  font-style: var(--heading-m-font-style);
+}
+
+.home-container .welcome-message {
+  position: absolute;
+  width: 350px;
+  top: 152px;
+  left: 0;
+  font-family: var(--body-m-font-family);
+  font-weight: var(--body-m-font-weight);
+  color: var(--white);
+  font-size: var(--body-m-font-size);
+  letter-spacing: var(--body-m-letter-spacing);
+  line-height: var(--body-m-line-height);
+  font-style: var(--body-m-font-style);
+}
+
+.home-container .gallery-overlap-section {
+  position: absolute;
+  width: 1442px;
+  height: 246px;
+  top: 2309px;
+  left: -1px;
+  background-color: var(--almost-black);
+}
+
+.home-container .gallery-info-group {
+  position: relative;
+  width: 1110px;
+  height: 84px;
+  top: 81px;
+  left: 166px;
+}
+
+.home-container .gallery-details {
+  position: absolute;
+  width: 730px;
+  height: 84px;
+  top: 0;
+  left: 0;
+}
+
+.home-container .gallery-visitors-info {
+  position: absolute;
+  width: 430px;
+  top: 0;
+  left: 300px;
+  font-family: "Outfit", Helvetica;
+  font-weight: 300;
+  color: var(--white);
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+
+.home-container .modern-art-logo {
+  position: absolute;
+  width: 160px;
+  height: 58px;
+  top: 0;
+  left: 0;
+}
+
+.home-container .gallery-images-group {
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  top: 0;
+  left: 1010px;
+}
+
+.home-container .gallery-path-image {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 0;
+}
+
+.home-container .gallery-shape {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 40px;
+}
+
+.home-container .gallery-path-alt {
+  position: absolute;
+  width: 20px;
+  height: 16px;
+  top: 2px;
+  left: 80px;
+}

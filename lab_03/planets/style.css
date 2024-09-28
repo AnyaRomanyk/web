@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0D1B2A;
+    color: white;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu a {
+    color: #7a8599;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 28px;
+    color: #E0E1DD;
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.fact-list {
+    display: grid;
+    gap: 40px;
+}
+
+.fact-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: center;
+    
+}
+
+.fact-description h2 {
+    background-color: #1B263B;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    background: linear-gradient(to right, #FFFFFF 0%, #5F5F5F 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+.fact-item h2 {
+    font-size: 22px;
+    color: #E0E1DD;
+}
+
+.fact-item p {
+    font-size: 18px;
+    color: #B1B1B1;
+}
+
+.fact-picture {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+@media (max-width: 599px) {
+    body {
+        background-color: white;
+        color: black;
+    }
+
+    .fact-description {
+        background-color: #f0f0f0;
+        color: black;
+    }
+
+    h1 {
+        color: black;
+    }
+
+    .highlight {
+        color: #007acc; 
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .fact-list {
+        grid-template-columns: 1fr; 
+    }
+
+    .fact-item {
+        grid-template-rows: auto auto;
+    }
+
+    .fact-description {
+        order: 1; 
+    }
+
+    .fact-picture {
+        order: 2;
+    }
+}
+
+@media (min-width: 1024px) {
+    .fact-list {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .fact-item {
+        grid-template-rows: auto auto; 
+    }
+
+    .fact-item:nth-child(odd) .fact-description {
+        order: 1; 
+    }
+
+    .fact-item:nth-child(odd) .fact-picture {
+        order: 2; 
+    }
+
+    .fact-item:nth-child(even) .fact-description {
+        order: 2; 
+    }
+
+    .fact-item:nth-child(even) .fact-picture {
+        order: 1; 
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .fact-item h2 {
+        font-size: 26px;
+    }
+
+    .fact-item p {
+        font-size: 20px;
+    }
+}

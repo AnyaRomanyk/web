@@ -1,0 +1,251 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Outfit:300|Big+Shoulders+Display:800");
+
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --almost-black: rgba(21, 21, 21, 1);
+  --white: rgba(255, 255, 255, 1);
+  --gold: rgba(213, 150, 108, 1);
+  --dark-grey: rgba(68, 68, 68, 1);
+
+  --font-family-heading: "Big Shoulders Display", Helvetica;
+  --font-weight-heading: 900;
+  --font-style-heading: normal;
+
+  --heading-XL: {
+    font-size: 96px;
+    letter-spacing: 0px;
+    line-height: 88px;
+  }
+  --heading-L: {
+    font-size: 70px;
+    letter-spacing: 0px;
+    line-height: 70px;
+  }
+  --heading-M: {
+    font-size: 60px;
+    letter-spacing: 0px;
+    line-height: 60px;
+  }
+  --heading-S: {
+    font-size: 36px;
+    letter-spacing: 0px;
+    line-height: 36px;
+  }
+
+  --font-family-body: "Outfit", Helvetica;
+  --font-weight-body: 300;
+  --font-style-body: normal;
+
+  --body-M: {
+    font-size: 22px;
+    letter-spacing: 0px;
+    line-height: 32px;
+  }
+  --body-S: {
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 28px;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.content-wrapper {
+  position: relative;
+  background-color: var(--white);
+  width: 1440px;
+  height: 1392px;
+}
+
+.highlight-section {
+  top: 1148px;
+  left: 0;
+  position: absolute;
+  background-color: var(--gold);
+  width: 1440px;
+  height: 244px;
+}
+
+.highlight-content {
+  top: -1px;
+  left: -1px;
+  position: relative;
+  background-color: var(--gold);
+  width: 1442px;
+  height: 246px;
+}
+
+.text-image-group {
+  top: 81px;
+  left: 166px;
+  position: relative;
+  width: 1110px;
+  height: 84px;
+}
+
+.text-section {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 730px;
+  height: 84px;
+}
+
+.gallery-description {
+  top: 0;
+  left: 300px;
+  position: absolute;
+  font-family: "Outfit", Helvetica;
+  font-weight: 300;
+  font-size: 18px;
+  color: var(--almost-black);
+  letter-spacing: 0;
+  line-height: 28px;
+  width: 430px;
+}
+
+.gallery-image {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 160px;
+  height: 58px;
+}
+
+.icon-section {
+  top: 0;
+  left: 1010px;
+  position: absolute;
+  width: 100px;
+  height: 20px;
+}
+
+.icon {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-shape {
+  top: 0;
+  left: 40px;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-small {
+  top: 2px;
+  left: 80px;
+  position: absolute;
+  width: 20px;
+  height: 16px;
+}
+
+.background-section {
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-image: url(./img1/maps.png);
+  background-size: 100% 100%;
+  width: 1440px;
+  height: 600px;
+}
+
+.navigation-group {
+  left: 156px;
+  position: relative;
+  width: 264px;
+  height: 72px;
+}
+
+.back-button-wrapper {
+  top: 0;
+  left: 56px;
+  position: absolute;
+  overflow: hidden;
+  width: 208px;
+  height: 72px;
+}
+
+.back-button {
+  top: -1px;
+  left: -1px;
+  position: relative;
+  background-color: var(--almost-black);
+  width: 210px;
+  height: 74px;
+}
+
+.back-button-text {
+  top: 25px;
+  left: 33px;
+  position: absolute;
+  font-family: "Big Shoulders Display", Helvetica;
+  font-weight: 800;
+  font-size: 20px;
+  color: var(--white);
+  letter-spacing: 3.64px;
+  white-space: nowrap;
+  line-height: normal;
+}
+
+.icon-wrapper {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 56px;
+  height: 72px;
+}
+
+.link-icon-wrapper {
+  top: -1px;
+  left: -1px;
+  position: relative;
+  background-color: var(--gold);
+  width: 58px;
+  height: 74px;
+}
+
+.link-icon {
+  top: 25px;
+  left: 24px;
+  width: 9px;
+  height: 25px;
+}
+  
+.footer-image {
+  top: 600px;
+  left: 0;
+  position: absolute;
+  width: 1440px;
+  height: 548px;
+}
