@@ -14,3 +14,6 @@ museum - https://anyaromanyk.github.io/web/lab_04/museum/
 
 lan 06
 calculator - https://anyaromanyk.github.io/web/lab_06/
+
+lab 10
+tanks - https://anyaromanyk.github.io/web/lab_10/
