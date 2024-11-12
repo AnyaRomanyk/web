@@ -1,0 +1,35 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #eee;
+    text-align: center;
+}
+
+.tank-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+
+}
+
+.tank-gallery img{
+    width: 100px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border 0.3s;
+
+}
+
+.tank-gallery img:hover{
+    border: 2px solid #ddd;
+}
+
+#tank-details{
+    background-color: #222;
+    padding: 20px;
+    margin-top: 20px;
+    display: inline-block;
+    
+}

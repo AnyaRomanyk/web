@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popular tanks</title>
+    <link rel="stylesheet" href = "style.css">
+</head>
+<body>
+    <h1>Most popular tanks</h1>
+    <div class="tank-gallery">
+        <img src="object140.jpg" alt = "Object 140" onclick="showTankDetails('object 140')">
+    <img src="T62A.png" alt="T-62A" onclick="showTankDetails('T-62A')">
+    <img src="E100.jpg" alt="E 100" onclick="showTankDetails('E 100')">
+    <img src="maus.png" alt="MAUS" onclick="showTankDetails('MAUS')">
+    <img src="T110e5.png" alt="T110E5" onclick="showTankDetails('T110E5')">
+    <img src="T57.png" alt="T57 HEAVY TANK" onclick="showTankDetails('T57 HEAVY TANK')">
+    <img src="FV215b.png" alt="FV215B" onclick="showTankDetails('FV215B')">
+    <img src="conqueror.png" alt="CONQUEROR G..." onclick="showTankDetails('CONQUEROR G...')">
+    </div>
+
+
+<div id="tank-details">
+    <h2 id="tank-name">Select a tank to view details</h2>
+    <p id="damage"></p>
+    <p id="breoning"></p>
+    <p id="attack-speed"></p>
+    <p id="targeting-time"></p>
+    <p id="ammunition"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
