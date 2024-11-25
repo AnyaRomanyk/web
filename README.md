@@ -12,8 +12,11 @@ planets - https://anyaromanyk.github.io/web/lab_03/planets/
 lab 04
 museum - https://anyaromanyk.github.io/web/lab_04/museum/
 
-lan 06
+lab 06
 calculator - https://anyaromanyk.github.io/web/lab_06/
+
+lab 07
+guess number - https://anyaromanyk.github.io/web/lab_07/index.html
 
 lab 09 
 memory game - https://anyaromanyk.github.io/web/lab_09/
