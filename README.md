@@ -18,6 +18,9 @@ calculator - https://anyaromanyk.github.io/web/lab_06/
 lab 07
 guess number - https://anyaromanyk.github.io/web/lab_07/index.html
 
+lab 08
+File manager - https://anyaromanyk.github.io/web/lab_08/index.html
+
 lab 09 
 memory game - https://anyaromanyk.github.io/web/lab_09/
 
