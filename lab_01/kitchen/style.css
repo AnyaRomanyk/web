@@ -1,113 +1,231 @@
-header{
-    background: url(images/header-page.jpg)no-repeat;
-    background-size: 100%;
-    height: 130px;
-    width: 50%;
-}
+.lato-thin {
+    font-family: "Lato", system-ui;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .lato-light {
+    font-family: "Lato", system-ui;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .lato-regular {
+    font-family: "Lato", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .lato-bold {
+    font-family: "Lato", system-ui;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .lato-black {
+    font-family: "Lato", system-ui;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .lato-thin-italic {
+    font-family: "Lato", system-ui;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .lato-light-italic {
+    font-family: "Lato", system-ui;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .lato-regular-italic {
+    font-family: "Lato", system-ui;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .lato-bold-italic {
+    font-family: "Lato", system-ui;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .lato-black-italic {
+    font-family: "Lato", system-ui;
+    font-weight: 900;
+    font-style: italic;
+  }
 
-body{
-    background: url(images/dark-wood.jpg);
-    font-family:'Lato',sans-serif;
-    font-size:14px;
-    text-decoration-color: #333333;
-    margin: 0px;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-}
+  * {
+    font-family: "Lato", system-ui;
+  }
 
-h1{
+  body{
+    background-image: url("images/dark-wood.jpg");
+    background-size: cover;
+    font-family: 'lato' sans-serif;
+    font-size: 14px;
     margin: 0;
-    text-align: end;
-    padding-top: 42px;
-    font-size: 35px;
-}
-nav{
-    background: url(images/header-page.jpg)no-repeat;
-    background-size: 100%;
-    width: 50%;
-    height: 33px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-li{
-    display: inline-block; 
-}
-a{
-    padding-right: 35px;
-    color: #fff;
-    text-decoration: none;
-    font-size: 1em;
+    padding: 0;
+  }
+
+  header {
+    background-image: url("images/header-page.jpg");
+    background-size: cover;
     font-weight: bold;
+    font-size: 20px;
+    text-align: right;
+    margin-right: 15%;
+    margin-left: 15%;
+    padding: 50px 0 0 0;
+    color:black;
+    height: 100px;
+    width: auto;
+    h1 {
+        margin: 0 30px 0;
+    }
+  }
+
+  nav {
+    background: url("images/header-page.jpg");
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15%;
+    margin-left: 15%;
+    float: center;
+    ul 
+    {
+      margin: 0;
+      padding: 6px;
+      height: 20px;
+      line-height: 20px;
+      li {
+        display: inline-block;
+      }
+      a 
+      {
+        font-size: 14px;
+        color: white;
+        margin-right: 20px;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: black;
+      }
+    }
+  }
+
+main {
+    background-color: white;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 2px;
+    position: relative;
+figure {
+  width: 250px;
+  margin-top: 30px;
+  margin-left: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #fff;
 }
 
-ul{
-    list-style-type: none;
+figure div {
+display: flex;
+flex-direction: column;
+box-sizing: content-box;
+} 
+  
 }
 
-main{
-    background-color: #fff;
-    width: 57%;
-    display: flex;
+img {
+  max-width: 100%;
+  height: auto;   
 }
 
-figure{
-    border-color: #796969;
-    border-style: solid;
-    border-width: 1px;
-    padding: 5px;
-    margin: 10px;
-    float: left;
+figcaption {
+  font-size: 14px;
+  color: #555; 
+  margin-top: 8px;
 }
 
-main article:after{
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin: 10px 0;
+}
+
+h3 {
+  font-size: 18px;
+  color: #d4af37;
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+article:nth-child(n) {
+  display: flex;
+  flex-direction: row;
+}
+
+p {
+  width: 230px;
+  font-size: 16px;
+  line-height: 1.6; 
+  color: #666;
+  margin: 120px 0 0 -215px;
+}
+
+article div {
+  margin-top: 20px;
+}
+
+aside {
+  float: right;
+}
+
+.courses article:after {
     content: '';
     display: block;
     clear: both;
 }
 
-article{
-    display: flex;
-    padding: 10px;
-}
-
-footer{
-    width: 100%;
-    color: #fff;
-    text-align: center;
-    background-color: #b4a6a6f5;
-    padding: 20px 0 20px 0;
-}
-
-.popular-dishes{
-    padding-top: 10px;
-}
-
-aside h2{
-    padding-bottom: 150px;
-    margin-left: 20px;
-    color: #c92caf;
-}
-
-aside li{
-    font-size: 20px;
-    margin-bottom: 30px;
+.popular-recipes {
+  position: absolute;
+  top: 22px;
+  right: 5px;
+  h2 {
+    margin-left: 35px;
+    color: #C71585;
+    font-weight: 900;
+    width: 100px;
+    font-size: 25px;
+  }
+  a {
+    color: #C71585;
+    font-family: 'lato' sans-serif;
+    font-weight: 500;
     text-decoration: none;
+    font-size: 16px;
+    line-height: 50px;
+  }
+  ul {
+    list-style-type: none;
+}
 }
 
-aside a{
-    color: #c92caf;
-}
 
-h2{
-    font-size: 30px;
-}
-
-h3{
-    color: #dacd1a;
-    font-size: 20px;
-}
-
-p{
-    font-size: 15px;
+footer {
+  margin-top: 20px;
+    background-color: #ccc;
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
