@@ -1,103 +1,74 @@
-const cards = document.querySelectorAll('.card');
-const faces = [
-    'images/cat.png',
-    'images/cow.png',
-    'images/dog.png',
-    'images/fox.png',
-    'images/penguin.png',
-    'images/pig.png',
-    'images/cat.png',
-    'images/cow.png',
-    'images/dog.png',
-    'images/fox.png',
-    'images/penguin.png',
-    'images/pig.png'
-];
+const gameContainer = document.getElementById('game-container');
+const restartButton = document.getElementById('restart-button');
 
-const maxScore = 6;
-let score = 0,
-    firstCard = null,
-    secondCard = null,
-    boardDisabled = true,
-    moves = 0,
-    sec = 0,
-    min = 0,
-    interval = null;
+let cardValues = ['A', 'A', 'B', 'B', 'C', 'C', 'D', 'D', 'E', 'E', 'F', 'F'];
+let firstCard = null;
+let secondCard = null;
+let lockBoard = false;
+let matchedCards = 0;
 
-function shuffle(arr) {
-    for (let i = arr.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [arr[i], arr[j]] = [arr[j], arr[i]];
-    }
+function shuffle(array) {
+    array.sort(() => Math.random() - 0.5);
 }
 
-function start() {
-    score = 0;
-    moves = 0;
-    sec = 0;
-    min = 0;
-    document.querySelector('.moves span').innerText = '0';
-    document.querySelector('.timer span').innerText = '00:00';
-    cards.forEach(card => card.classList.remove('show'));
-    shuffle(faces);
-    cards.forEach((card, i) => card.querySelector('.back img').src = faces[i]);
-    boardDisabled = false;
-    startTimer();
+function createCard(value) {
+    const card = document.createElement('div');
+    card.classList.add('card', 'hidden');
+    card.dataset.value = value;
+    card.addEventListener('click', flipCard);
+    return card;
 }
 
 function flipCard() {
-    if (boardDisabled || this.classList.contains('show')) return;
+    if (lockBoard) return;
+    if (this === firstCard) return;
 
-    if (!firstCard) {
+    this.classList.remove('hidden');
+    this.textContent = this.dataset.value;
+
+    if(!firstCard) {
         firstCard = this;
-        this.classList.toggle('show');
-    } else {
-        if (!secondCard) {
-            moves += 1;
-            document.querySelector('.moves span').innerText = moves;
-            secondCard = this;
-            this.classList.toggle('show');
+        return;
+    }
 
-            if (firstCard.querySelector('img').src === secondCard.querySelector('img').src) {
-                score += 1;
-                firstCard = null;
-                secondCard = null;
-                
-                if (score === maxScore) {
-                    clearInterval(interval);
-                    interval = null;
-                    document.querySelector('.start button').innerText = 'New Game';
-                }
-            } else {
-                boardDisabled = true;
-                setTimeout(() => {
-                    firstCard.classList.remove('show');
-                    secondCard.classList.remove('show');
-                    firstCard = null;
-                    secondCard = null;
-                    boardDisabled = false;
-                }, 1000);
-            }
+    secondCard = this;
+    lockBoard = true;
+
+    checkForMatch();
+}
+
+function checkForMatch() {
+    if (firstCard.dataset.value === secondCard.dataset.value) {
+        matchedCards += 2;
+        resetBoard();
+        if (matchedCards === cardValues.length) {
+            setTimeout(() => alert('You found all cards!'), 500); 
         }
+    } else {
+        setTimeout(() => {
+            firstCard.classList.add('hidden');
+            secondCard.classList.add('hidden');
+            resetBoard();
+        }, 1000)
     }
 }
 
-function startTimer() {
-    if (!interval) {
-        interval = setInterval(() => {
-            sec += 1;
-            if (sec === 60) {
-                min += 1;
-                sec = 0;
-            }
-            document.querySelector('.timer span').innerText = `${min < 10 ? '0' + min : min}:${sec < 10 ? '0' + sec : sec}`;
-        }, 1000);
-    }
+function resetBoard() {
+    [firstCard, secondCard, lockBoard] = [null, null, false];
 }
 
-cards.forEach(card => card.addEventListener('click', flipCard));
+function startGame() {
+    matchedCards = 0;
+    firstCard = null;
+    secondCard = null;
+    lockBoard = false;
+    gameContainer.innerHTML = '';
+    shuffle(cardValues);
+    cardValues.forEach(value => {
+        const card = createCard(value);
+        gameContainer.appendChild(card);
+    })
+}
 
-document.querySelector('.start button').onclick = () => {
-    document.querySelector('.start button').innerText = 'Restart';
-    start();
-};
+restartButton.addEventListener('click', startGame)
+startGame();
