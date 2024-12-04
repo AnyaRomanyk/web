@@ -22,7 +22,7 @@ lab 08
 File manager - https://anyaromanyk.github.io/web/lab_08/index.html
 
 lab 09 
-memory game - https://anyaromanyk.github.io/web/lab_09/
+card game - https://anyaromanyk.github.io/web/lab_09/
 
 lab 10
 tanks - https://anyaromanyk.github.io/web/lab_10/
