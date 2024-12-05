@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2 {
+    color: inherit; 
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.resume-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.profile-photo {
+    width: 350px;
+    height: 230px;
+    object-fit: cover; 
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.info-box {
+    background-color: #E8D8B0;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.info-box h2 {
+    color: inherit; 
+}
+
+.info-box p, .info-box ul {
+    color: inherit; 
+}
+
+.info-box ul li {
+    margin: 10px 0;
+}
+
+.info-box a {
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+.info-box a:hover {
+    color: #A89F91;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+}
+
+.theme-image {
+    width: 583px; 
+    height: 350px;
+    object-fit: cover; 
+    border-radius: 10px; 
+    transition: transform 0.3s ease;
+}
+
+.theme-image:hover {
+    transform: scale(1.05);
+}
+
+.index-page {
+    background-color: #F9E6B0;
+    color: #000; 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.light-theme {
+    background-color: #F5F1E1; 
+    color: #000; 
+}
+
+.light-theme .resume-container {
+    background-color: #FFF; 
+}
+
+.light-theme .info-box {
+    background-color: #E8D8B0; 
+}
+
+.light-theme .info-box a {
+    color: #7C6B47;
+}
+
+.light-theme .info-box a:hover {
+    color: #A89F91;
+}
+
+.dark-theme {
+    background-color: #5A4F44; 
+    color: #FFF;
+}
+
+.dark-theme .resume-container {
+    background-color: #7A6C5B;
+}
+
+.dark-theme .info-box {
+    background-color: #7A6C5B; 
+}
+
+.dark-theme .info-box a {
+    color: #D4C8A3;
+}
+
+.dark-theme .info-box a:hover {
+    color: #C9B692; 
+}
+
+
+body, .resume-container, .info-box {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
