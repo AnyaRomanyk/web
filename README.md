@@ -31,4 +31,4 @@ lab 10
 tanks - https://anyaromanyk.github.io/web/lab_10/
 
 lab 12
-pokemons - 
+pokemons - https://anyaromanyk.github.io/web/lab_12/
