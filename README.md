@@ -13,7 +13,7 @@ lab 04
 museum - https://anyaromanyk.github.io/web/lab_04/
 
 lab 05
-resume - https://anyaromanyk.github.io/web/lab_05/
+resume - https://anyaromanyk.github.io/web/lab_05/index.html
 
 lab 06
 calculator - https://anyaromanyk.github.io/web/lab_06/
